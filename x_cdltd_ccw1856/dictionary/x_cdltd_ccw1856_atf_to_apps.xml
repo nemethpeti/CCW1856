@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="ATF to Apps" max_length="40" name="x_cdltd_ccw1856_atf_to_apps" text_index="true" type="collection">
+    <element db_object_id="62a13ccb47f311105df3dac8536d43cc" label="ATF to Apps" max_length="40" name="x_cdltd_ccw1856_atf_to_apps" text_index="true" type="collection">
         <element attributes="encode_utf8=false" label="Application" max_length="32" name="application" reference="x_cdltd_ccw1856_dev_scopes" type="reference"/>
         <element attributes="encode_utf8=false" label="Suite" max_length="32" name="suite" reference="sys_atf_test_suite" type="reference"/>
         <index name="index">
-            <element name="suite"/>
+            <element name="application"/>
         </index>
         <index name="index2">
-            <element name="application"/>
+            <element name="suite"/>
         </index>
     </element>
 </database>
